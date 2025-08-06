@@ -31,7 +31,7 @@ body {
 }
 
 .icon {
-  background: url('logo.png') no-repeat center center / cover;
+  background: url('./logo.png') no-repeat center center / cover;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -135,12 +135,12 @@ body {
 
 .hero_right h1 {
   font-size: 3rem;
-  color: #4A2B1A;
+  color: wheat;
   margin-bottom: 2rem;
 }
 
 .hero_right p {
-  color: #4A2B1A;
+  color: #FFEAC5;
   font-size: 2rem;
   margin-bottom: 20px;
 }
@@ -264,4 +264,110 @@ body {
   padding-top: 1rem;
   padding-left: 2rem;
   font-size: 1.5rem;
+  max-width: 700px;
+  max-height: fit-content;
 }
+
+
+.footer{
+  background-color: #3f2b1c;
+  color: #fff9f0;
+  padding: 4rem 1rem;
+}
+
+.container{
+  
+}
+
+.footer-grid{
+  display: grid;
+  gap:2rem;
+}
+
+.brand-section .brand-header{
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+
+.brand-logo{
+  width: 50px;
+  height: 50px;
+  background-color: #b2865a;
+  border-radius: 50%;
+  
+}
+
+.logo-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border-color: #FFEAC5;
+  border-style: solid;
+}
+
+.brand-name{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.brand-text{
+  padding-top: 1rem;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.footer-link h3{
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-link ul{
+  padding-top: 0.5rem;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.footer-link a{
+  padding: 2rem;
+  text-decoration: none;
+  color: #f8ddb5;
+}
+
+.footer-link:hover{
+  color: #d1a06f;
+}
+
+.footer-link a:hover{
+  color: #dcd8d1;
+}
+
+.social{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icon1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(209, 160, 111, 0.1);
+  color: #fcecd5;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon1:hover {
+  background-color: rgba(209, 160, 111, 0.3);
+  color: #fff9f0;
+}
+
+
+
+
