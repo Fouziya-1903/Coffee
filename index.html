@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Coffee</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.png" type="image/x-icon" />
 </head>
@@ -19,21 +18,22 @@
     </div>
     <nav class="nav_menu">
       <a href="#Home" class="nav_link">Home</a>
-      <a href="#About" class="nav_link">About</a>
+      <a href="#about" class="nav_link">About</a>
       <a href="menu.html" class="nav_link" target="_blank">Menu</a>
-      <a href="#Contact" class="nav_link">Contact</a>
+      <a href="#contact" class="nav_link">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero" id="Home">
   <video autoplay muted loop playsinline class="bg-video">
     <source src="Blog-background.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <div class="herohalf">
     <div class="hero_left">
-      <img src="cup1.png" alt="Coffee cup1" class="cup" />
+      <img src="cup1.png" alt="Coffee cup1" class="cup" id="main-cup" />
+
       <ul class="cups">
         <li><img src="cup1.png" alt="Cup 1" /></li>
         <li><img src="cup2.png" alt="Cup 2" /></li>
@@ -78,7 +78,7 @@
   </div>
 </section>
 
-<section class="blog-section">
+<section class="blog-section" id="about">
   <div class="blog">
     <img src="Blog-background.png" alt="" class="blog-bg">
     <h2 class="blog-title">Our Journey</h2>
@@ -91,7 +91,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="container">
     <div class="footer-grid">
       <div class="brand-section">
@@ -115,9 +115,9 @@
         <h3>Quick Links</h3>
         <ul>
           <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -131,5 +131,8 @@
     </div>  
   </div>
 </footer>
+
+<script src="./script.js"></script>
+
 </body>
 </html>
