@@ -10,16 +10,18 @@ body {
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  left: 2rem;
+  right: 2rem;
+  width: fit;
   height: 80px;
   z-index: 10;
+  border-radius: 2rem;
+  background-color: rgba(245, 245, 245, 0.265);
 }
 
 .h_container {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 1rem ;
   align-items: center;
   justify-content: space-between;
 }
@@ -55,7 +57,7 @@ body {
   font-weight: bold;
 }
 
-.hero {
+/* .hero {
   position: relative;
   padding-top: 80px;
   display: flex;
@@ -65,6 +67,19 @@ body {
   background-size: cover;
   overflow: hidden;
   padding: 3rem 2rem;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
 }
 
 .bg-video {
@@ -153,7 +168,133 @@ body {
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
+} */
+
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #fef6f0;
+  overflow: hidden;
+  padding: 2rem;
 }
+
+.hero-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.hero-brand{
+  font-size: 15rem;
+  color: rgba(150, 100, 50, 0.05);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 12px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+.hero-bg-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 0;
+  padding-left: 2rem;
+
+   
+}
+
+.hero-bg-2{
+  display: flex;
+  position: relative;
+  bottom: 50%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-description{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #d49a6e;
+  max-width: 500px;
+}
+
+.hero-description h2 {
+  font-size: 2.5rem;
+  color: #3f2b1c;
+  margin-bottom: 1rem;
+}
+
+.hero-description p {
+  font-size: 1.2rem;
+  color: #7B4726;
+  margin-bottom: 1.5rem;
+}
+
+
+.shop-btn{
+  background-color: #d49a6e;
+  padding: 1rem;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-img-group{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-cup{
+  width: 300px;
+  animation: float 4s ease-in-out infinite;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes float {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0);}
+}
+
+.cups ul{
+  list-style: none;
+  /* padding: 0;
+  margin: 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cups li img{
+  width: 80px;
+  /* height: auto; */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 1.5rem;
+}
+
+.cups li img:hover{
+  transform: scale(1.1);
+}
+
 
 /* Categories */
 .categories {
@@ -275,13 +416,15 @@ body {
   padding: 4rem 1rem;
 }
 
-.container{
-  
+.footer .container{
+  max-width: 1200px;
+  margin: auto;
 }
 
 .footer-grid{
-  display: grid;
+  display: flex;
   gap:2rem;
+  justify-content: space-between;
 }
 
 .brand-section .brand-header{
@@ -317,29 +460,42 @@ body {
   max-width: 300px;
   margin-bottom: 1rem;
 }
+.footer-column{
+  /* align-items: center; */
+  justify-content: left;
+}
 
-.footer-link h3{
+.footer-column h3{
   padding-top: 1rem;
   font-size: 1.2rem;
 }
 
-.footer-link ul{
+.footer-column ul{
   padding-top: 0.5rem;
   list-style: none;
   justify-content: space-between;
 }
+.footer-column ul li {
+  margin-bottom: 10px;
+}
 
-.footer-link a{
-  padding: 2rem;
+.footer-column a{
   text-decoration: none;
   color: #f8ddb5;
 }
 
-.footer-link:hover{
+.footer-column:hover{
   color: #d1a06f;
 }
 
-.footer-link a:hover{
+.footer-column a:hover{
+  color: #dcd8d1;
+}
+
+.footer-column li address{
+  color: #f8ddb5;
+}
+.footer-column li address:hover{
   color: #dcd8d1;
 }
 
@@ -367,7 +523,3 @@ body {
   background-color: rgba(209, 160, 111, 0.3);
   color: #fff9f0;
 }
-
-
-
-
