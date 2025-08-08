@@ -193,12 +193,16 @@ body {
 
 .hero-brand{
   font-size: 15rem;
-  color: rgba(150, 100, 50, 0.05);
+  /* color: rgba(150, 100, 50, 0.05); */
+  color: transparent;
   font-weight: 800;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 25px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  background: linear-gradient(to bottom,#2a1408 0%,#5c3019 35%,#a56638 70%,#c78a55 100%);
+  opacity: 0.8;
+  -webkit-background-clip: text;
 }
 
 
@@ -225,6 +229,9 @@ body {
 }
 
 .hero-description{
+  position: relative;
+  top: 40%;
+  bottom: 0%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #d49a6e;
@@ -232,12 +239,15 @@ body {
 }
 
 .hero-description h2 {
+  margin-top: 250px;
+  margin-left: 50px;
   font-size: 2.5rem;
   color: #3f2b1c;
   margin-bottom: 1rem;
 }
 
 .hero-description p {
+  margin-left: 50px;
   font-size: 1.2rem;
   color: #7B4726;
   margin-bottom: 1.5rem;
@@ -245,6 +255,7 @@ body {
 
 
 .shop-btn{
+  margin-left: 50px;
   background-color: #d49a6e;
   padding: 1rem;
   color: white;
@@ -264,13 +275,30 @@ body {
 .main-cup{
   width: 300px;
   animation: float 4s ease-in-out infinite;
+  transform: translateY(-50%) rotate(-45deg);
   transition: opacity 0.3s ease-in-out;
 }
 
+.main-cup{
+  width: 500px;
+  position: absolute;
+  top: 45%;
+  left: 52%;
+  animation: float 4s ease-in-out infinite;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+
 @keyframes float {
-  0% {transform: translateY(0);}
-  50% {transform: translateY(-20px);}
-  100% {transform: translateY(0);}
+  0% {
+    transform: translateY(-50%) rotate(20deg) translateY(0);
+  }
+  50% {
+    transform: translateY(-50%) rotate(20deg) translateY(-20px);
+  }
+  100% {
+    transform: translateY(-50%) rotate(20deg) translateY(0);
+  }
 }
 
 .cups ul{
