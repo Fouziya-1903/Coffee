@@ -195,7 +195,7 @@ body {
   right: 2rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  background-color: #d1a06f;
+  background-color: #f2e1c1;
   opacity: 0.8;
   z-index: 0;
 }
@@ -221,6 +221,7 @@ body {
   background: linear-gradient(to bottom,#2a1408 0%,#48210c 35%,#61381a 70%,#c78a55 100%);
   opacity: 0.8;
   -webkit-background-clip: text;
+  z-index: 3;
 }
 
 
@@ -255,6 +256,7 @@ body {
   margin-bottom: 2rem;
   color: #d49a6e;
   max-width: 500px;
+  z-index: 1;
 }
 
 .hero-description h2 {
@@ -263,6 +265,7 @@ body {
   font-size: 2.5rem;
   color: #3f2b1c;
   margin-bottom: 1rem;
+  z-index: 1;
 }
 
 .hero-description p {
@@ -270,6 +273,7 @@ body {
   font-size: 1.2rem;
   color: #7B4726;
   margin-bottom: 1.5rem;
+  z-index: 1;
 }
 
 
@@ -300,7 +304,7 @@ body {
   left: 42%;
   animation: float 4s ease-in-out infinite;
   transition: opacity 0.3s ease-in-out;
-  z-index: 2;
+  z-index: 4;
 }
 
 @keyframes float {
@@ -452,6 +456,42 @@ body {
   max-width: 700px;
   max-height: fit-content;
 }
+
+
+
+/* Gallery */
+
+.galley-section{
+  background-color: #fef6f0;
+}
+
+.gallery-title{
+  text-align: center;
+  color: #4b2e1e;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.gallery-grid{
+  display: grid;
+  gap: 2rem;
+}
+
+.gallery-item{
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
 
 
 .footer{
