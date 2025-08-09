@@ -1,4 +1,3 @@
-
 const mainCup = document.querySelector(".main-cup");
 
 
